@@ -1,0 +1,80 @@
+body, html {
+    margin: 0;
+    text-align: center;
+}
+
+#profile-card {
+    text-align: center;
+    display: inline-block;
+}
+#profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    position: relative;
+    bottom: -5px;
+    border: 2px solid rgba(2, 1, 23, 0.199);
+}
+#profile-details {
+    border: 1px solid rgba(2, 1, 23, 0.199);
+    border-radius: 10px;
+    width: 170px;
+    padding: 10px;
+}
+
+/* review below */
+.bold-text {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.medium-bold-text {
+    font-size: 12px;
+    font-style: normal;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.handle-text {
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+    margin-top: 10px;
+    background-color: black;
+    color: grey;
+    border-radius: 5px;
+}
+a {
+    text-decoration: none;
+    color: brown;
+}
+#about-me {
+    font-size: 12px;
+    font-variant: small-caps;
+}
+#contact-me-container {
+    text-align: left;
+}
+#contact-me-header {
+    margin-bottom: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.contact {
+    margin-right: 10px;
+    font-size: 10px;
+}
+.contact-item {
+    font-size: 8px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#close-button-container {
+    text-align: center;
+}
+#close-button{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}

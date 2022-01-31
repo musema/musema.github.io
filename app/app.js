@@ -15,30 +15,26 @@ const showPreviousImageButton = document.getElementById('show-previous-image-but
 const showNextImageButton = document.getElementById('show-next-image-button');
 
 
-
+profileImage.addEventListener('click', handleProfileImageClick);
 modalCloseButton.addEventListener('click', closeModal);
 profileImage.addEventListener('click', showModal);
 showPreviousImageButton.addEventListener('click', prevModalImage);
 showNextImageButton.addEventListener('click', nextModalImage);
 window.addEventListener('click', onWindowClick);
 
-if(profileImage) {
-    let imageIndex = 0;
-    setInterval(() => {
-        if(imageIndex < images.length) {
-            profileImage.src = images[imageIndex];
-            imageIndex++
-        } else {
-            imageIndex = 0;
-            profileImage.src = images[imageIndex];
-        }
-    }, 5000);
 
-    profileImage.addEventListener('click', handleProfileImageClick)
+let imageIndex = 0;
+function setupImageCarousel() {
+    if(imageIndex < images.length) {
+        profileImage.src = images[imageIndex];
+        imageIndex++
+    } else {
+        imageIndex = 0;
+        profileImage.src = images[imageIndex];
+    }
 }
 
-
-
+setInterval(setupImageCarousel, 5000);
 
 // modal actions
 let currentModalImageIndex;
@@ -49,11 +45,11 @@ function handleProfileImageClick(e) {
 }
 
 function closeModal(){
-    modal.style.display = 'none'
+    modal.style.display = 'none';
 }
 
 function showModal(){
-    modal.style.display = 'block'
+    modal.style.display = 'block';
 }
 
 function nextModalImage(){
